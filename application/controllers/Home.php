@@ -7,13 +7,12 @@ require_once("application/core/General_controller.php");
 class Home extends General_controller {
 	public function __construct() {
 		parent::__construct();
-		$this->load->model("Home_model");
 	}
 	
 	public function index()
 	{
 		$data = array(
-			"title" => "Home"
+			"title" => "HEX to RGB Converter"
 		);
 		
 		parent::view("home", $data);

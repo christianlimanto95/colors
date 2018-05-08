@@ -1,57 +1,54 @@
 * {
-  font-family: copperplate-bold;
-  outline: 0;
-  margin: 0;
-  padding: 0;
+    font-family: arial;
+    outline: 0;
+    margin: 0;
+    padding: 0;
 
-  -ms-touch-action: pan-x pan-y;
-  touch-action: manipulation;
+    -ms-touch-action: pan-x pan-y;
+    touch-action: manipulation;
 
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 
-  -webkit-touch-callout: none; /* iOS Safari */
-  -webkit-user-select: none; /* Safari */
-  -khtml-user-select: none; /* Konqueror HTML */
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* Internet Explorer/Edge */
-  user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
-
-  -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: transparent;
 }
 
 body {
-  overflow-x: hidden;
+    overflow-x: hidden;
 }
 
-.section {
-  width: 100vw;
-  background-color: #F1F1F1;
-  overflow: hidden;
-  color: #444;
+.footer {
+    font-size: 10pt;
+    text-align: center;
+    position: absolute;
+    width: 100vw;
 }
 
-@media all and (max-width: 1279px) {
-  .div-mobile {
-    display: block;
-  }
-
-  .section {
-    height: 160vw;
-  }
+.footer a {
+    color: black;
 }
 
-@media all and (min-width: 768px) and (max-width: 1279px) {
+@media all and (max-width: 767px) {
+    body {
+        height: calc(160vw - 30px);
+    }
+
+    .footer {
+        top: 160vw;
+    }
+}
+
+@media all and (min-width: 768px) {
+    .footer {
+        bottom: 30px;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
 
 }
 
-@media all and (min-width: 1280px) {
-  .div-mobile {
-    display: none;
-  }
-
-  .section {
-    height: 100vh;
-  }
+@media all and (min-width: 1025px) {
+   
 }

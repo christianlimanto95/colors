@@ -15,7 +15,7 @@ class General_controller extends CI_Controller
     public function __construct()
     {
         parent::__construct();
-        $this->load->model('common/General_model');
+        //$this->load->model('common/General_model');
     }
 
 	public function load_module($module_name) {
